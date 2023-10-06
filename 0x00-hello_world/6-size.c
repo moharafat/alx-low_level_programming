@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: using sizeof to print the size of the carious types
+ * Description: using sizeof to print the size of the various types
  *
  * Return Always 0 (Sucess)
 */
