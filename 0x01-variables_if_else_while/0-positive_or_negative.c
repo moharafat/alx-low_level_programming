@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * * main - entry point
- * *
- * * Description: positive or negative
- * *
- * * Return : 0 (success)
- * */
+ * main - entry point
+ *
+ * Description: positive or negative
+ *
+ * Return : 0 (success)
+ */
 int main(void)
 {
 	int n;
