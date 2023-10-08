@@ -6,18 +6,20 @@
  * Return: always 0 (Success)
 */
 
-int main(void)	{
-int a = 97;
-
-while (a >= 97 && a <= 122)
+int main(void)
 {
-	if (a != 101 && a != 113)
 
-	{
-	putchar(a);
-	a++;
-	}
-}
+	char a;
+
+	for letter (a = 'a'; a <= 'z'; a++)
+		{
+		if (a != 'q' && letter != 'e')
+
+				putchar(a);
+
+		}
+
+
 	putchar('\n');
 
 return (0);
