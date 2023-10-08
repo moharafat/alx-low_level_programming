@@ -7,19 +7,19 @@
 */
 int main(void)
 {
-	int digi = 0;
-	while (digi <= 9)
+	int num;
+
+	for (num = 0; num <= 9; num++)
 	{
-		putchar(digi + 48);
-
-		if (digi != 9)
-		{	
-			putchar(,);
-			putchar( );
-		}
-		digi++;
-
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+		
+		putchar(',');
+		putchar(' ');
 	}
+
 	putchar('\n');
+
 	return (0);
 }
