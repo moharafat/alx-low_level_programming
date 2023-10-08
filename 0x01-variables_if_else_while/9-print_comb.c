@@ -10,12 +10,12 @@ int main(void)
 int digi = 0;
 	while (digi <= 9)
 	{
-		putchar (digi + 48);
+		putchar(digi + 48);
 
 		if (digi != 9)
 		{	
-			putchar (,);
-			putchar ( );
+			putchar(,);
+			putchar( );
 		}
 		digi++;
 
