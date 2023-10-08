@@ -7,19 +7,18 @@
 */
 int main(void)
 {
-int a = 57
-char b = 102
+int a = 48;
 
-while (a >= 48 && a <= 57)
-	{
-	putchar(a+ '0');
-	}
+while (a <= 102)
+{
+	putchar(a);
 
-while (b >= 97 && b <= 102)
-	{
-	putchar(b+ '0');
-	}
+	if (a == 57)
 
+		a += 39;
+	a++;
+
+}
 
 	putchar('\n');
 return (0);
