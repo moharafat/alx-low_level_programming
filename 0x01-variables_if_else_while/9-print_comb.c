@@ -14,8 +14,8 @@ int digi = 0;
 
 		if (digi != 9)
 		{	
-			puchchar (,);
-			puchchar ( );
+			putchar (,);
+			putchar ( );
 		}
 		digi++;
 
