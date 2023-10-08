@@ -8,7 +8,7 @@
 int main(void)
 {
 int digi = 0;
-	while (digi < 9)
+	while (digi <= 9)
 	{
 		putchar (digi + 48);
 
