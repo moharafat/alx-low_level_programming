@@ -14,5 +14,5 @@ while (a >= 97 || a <= 122)
     putchar('a');
     a++;
     }
-
+return (0);
 }
