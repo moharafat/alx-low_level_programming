@@ -20,7 +20,7 @@ while (a >= 97 && a <= 122)
 while (b >= 65 && b <= 90)
 	{
 	putchar(b);
-	a++;
+	b++;
 	}
 	putchar('\n');
 
