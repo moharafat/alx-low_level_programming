@@ -12,12 +12,12 @@ int b = 102
 
 while (a >= 48 && a <= 57)
 	{
-	putchar(c);
+	putchar(a);
 	}
 
-while (a >= 97 && a <= 102)
+while (b >= 97 && b <= 102)
 	{
-	putchar(c);
+	putchar(b);
 	}
 
 
