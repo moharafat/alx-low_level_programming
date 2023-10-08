@@ -8,7 +8,7 @@
 int main(void)
 {
 int a = 57
-int b = 102
+char b = 102
 
 while (a >= 48 && a <= 57)
 	{
