@@ -9,10 +9,11 @@ int main(void)
 {
 int a = 97;
 
-while (a >= 97 && a <= 122\n)
+while (a >= 97 && a <= 122)
     {
     putchar(a);
     a++;
+    /n;
     }
 return (0);
 }
