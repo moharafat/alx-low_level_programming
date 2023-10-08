@@ -24,5 +24,5 @@ while (b >= 65 && b <= 90)
 	}
 	putchar('\n');
 
-return (0)
+return (0);
 }
