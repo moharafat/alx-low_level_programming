@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-int digi = 0;
+	int digi = 0;
 	while (digi <= 9)
 	{
 		putchar(digi + 48);
@@ -21,5 +21,5 @@ int digi = 0;
 
 	}
 	putchar('\n');
-return (0);
+	return (0);
 }
