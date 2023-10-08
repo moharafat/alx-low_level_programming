@@ -11,7 +11,8 @@ int n = 0;
 
 	while (n >= 0 && n <= 10)
 	{
-	putchar(n + '0');
+	putchar(n+'0');
+	// Putchar is expecting ASCII codes
 	n++;
 	}
 
