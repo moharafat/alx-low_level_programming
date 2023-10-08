@@ -5,15 +5,13 @@
  *
  * Return: always 0 (Success)
 */
-int main(void)
+int main()
 {
 
-(char c = 0; c < 16; c++) {
-        putchar(c);
+for (int i = 0; i < 16; i++) {
+		// Print digits 0-9
+		putchar(i < 10 ? '0' + i : 'a' + i - 10);
 }
-
-
-
 
 
 	putchar('\n');
