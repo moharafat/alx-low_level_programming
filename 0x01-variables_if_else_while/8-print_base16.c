@@ -7,10 +7,18 @@
 */
 int main(void)
 {
+int a = 57
+int b = 102
 
-for (char c = '0'; c <= 'F'; c++) {
-        putchar(c);
-}
+while (a >= 48 && a <= 57)
+	{
+	putchar(c);
+	}
+
+while (a >= 97 && a <= 102)
+	{
+	putchar(c);
+	}
 
 
 	putchar('\n');
