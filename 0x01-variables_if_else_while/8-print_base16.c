@@ -8,7 +8,7 @@
 int main(void)
 {
 
-(char c = '0'; c <= 'F'; c++) {
+(char c = 0; c < 16; c++) {
         putchar(c);
 }
 
