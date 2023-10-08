@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-int n = o;
+int n = 0;
 
     for (n >= 0 && n <= 10)
     {
