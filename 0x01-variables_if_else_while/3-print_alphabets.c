@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	
+
 int a = 97;
 int b = 65;
 
@@ -22,7 +22,7 @@ while (b >= 65 && b <= 90)
 	putchar(b);
 	a++;
 	}
-	putchar("\n")
+	putchar('\n');
 
 return (0)
 }
