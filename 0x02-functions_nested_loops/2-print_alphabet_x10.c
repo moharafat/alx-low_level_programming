@@ -1,15 +1,17 @@
 #include "main.h"
-
 /**
  * main - Entry point
  *
  * Return: always 0 (Success)
  */
 
+
 void print_alphabet_x10(void)
-	int l, c ;
+
+	int l, c;
 	for (l = 0; l <=9; l++)
-	{	for (c = 'a'; c <=z; c++)
+	{	for (c = 'a'; c <= 'z'; c++)
+
 			_putchar(c);
 	_putchar('\n');
 	}
