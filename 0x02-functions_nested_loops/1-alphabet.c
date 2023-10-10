@@ -12,13 +12,13 @@ int main(void)
 {
 	int x;
 
-	for (x = 'a'; x <= 'z'; x++)
-		{
-		putchar(x);
-		}
+	for (x = 97; x >= 97 && x <= 122; x++)
+	{
+	_putchar(x);
+	}
 
 			{
-			putchar('\n');
+			_putchar('\n');
 			}
 return (0);
 }
