@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-nclude <stdio.h>
 
 /**
  *  * main - Entry point
@@ -13,9 +12,9 @@ int main(void)
 
 	for (a = 97;a >= 97 && a <= 122; a++)
 			{
-					putchar(a);
+					_putchar(a);
 						
 			}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
