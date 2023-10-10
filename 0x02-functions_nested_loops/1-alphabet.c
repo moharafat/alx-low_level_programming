@@ -17,8 +17,8 @@ int _putchar(char c)
 	{
 	_putchar(x);
 	}
-
+	
 	_putchar('\n');
-			
+
 return (0);
 }
