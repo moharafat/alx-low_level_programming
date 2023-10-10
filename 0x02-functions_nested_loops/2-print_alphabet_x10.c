@@ -1,26 +1,16 @@
-nclude <stdio.h>
+#include "main.h"
 
 /**
- *  * main - Entry point
- *   *
- *    * Return: always 0 (Success)
- *    */
+ * main - Entry point
+ *
+ * Return: always 0 (Success)
+ */
 
-
-int main(void)
-{
-		char x;
-
-			for (x = 'a'; x <= 'z'; x++)
-					{
-								if (x != 'e' && x != 'q')
-											{
-															putchar(x);
-																	}
-									}
-
-				putchar('\n');
-
-					return (0);
-}
+void print_alphabet_x10(void)
+	int l, c ;
+	for (l = 0; l <=9; l++)
+	{	for (c = 'a'; c <=z; c++)
+			_putchar(c);
+	_putchar('\n');
+	}
 
