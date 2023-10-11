@@ -1,9 +1,12 @@
 #include "main.h"
+
 /**
- *dad
- *daasd
- *das
- * */
+ * main - Entry point
+ *
+ * Description: using sizeof to print the size of the various types.
+ *
+ * Return: Always 0 (Success)
+*/
 
 int _islower(int c)
 {

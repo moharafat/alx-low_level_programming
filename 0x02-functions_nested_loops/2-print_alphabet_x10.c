@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * main - Entry point
+ * main - check the code.
  *
- * Return: always 0 (Success)
+ * Return: Always 0.
  */
 
-
 void print_alphabet_x10(void)
+{
+int x, l;
 
-	int l, c;
-	for (l = 0; l <= 9; l++)
-	{	
-		for (c = 'a'; c <= 'z'; c++)
+	for (l = 0; l < 10; l++)
+	{
+		for (x = 97; x <= 122; x++)
 
-			_putchar(c);
-
-	_putchar('\n');
+		_putchar(x);
+		_putchar('\n');
 	}
+}
