@@ -1,9 +1,11 @@
 #include "main.h"
 /**
- *ads
- *ds
- *d
- * */
+ * main - Entry point
+ *
+ * Description: using sizeof to print the size of the various types.
+ *
+ * Return: Always 0 (Success)
+*/
 int add(int a, int b)
 {
 	int sum = a + b;

@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * dddd
- *sd
- *sd
- **/
-
+ * main - Entry point
+ *
+ * Description: using sizeof to print the size of the various types.
+ *
+ * Return: Always 0 (Success)
+*/
 void print_to_98(int n)
 {
 	int count;

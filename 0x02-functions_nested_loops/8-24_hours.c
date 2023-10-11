@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- *d
- *dasd
+ * main - Entry point
  *
- * */
-
+ * Description: using sizeof to print the size of the various types.
+ *
+ * Return: Always 0 (Success)
+*/
 
 void jack_bauer(void)
 {

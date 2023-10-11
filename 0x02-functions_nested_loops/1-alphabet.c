@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *main - Entry point
+ * main - Entry point
  *
- *Return: always 0 (Success)
- *description: dsd
- */
-
+ * Description: using sizeof to print the size of the various types.
+ *
+ * Return: Always 0 (Success)
+*/
 void print_alphabet(void)
 {
 	int x;

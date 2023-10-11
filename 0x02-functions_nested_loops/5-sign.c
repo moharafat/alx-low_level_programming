@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- *main
+ * main - Entry point
  *
- *dsaasd
- * */
-
+ * Description: using sizeof to print the size of the various types.
+ *
+ * Return: Always 0 (Success)
+*/
 int print_sign(int n)
 
 {	
