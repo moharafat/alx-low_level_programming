@@ -1,10 +1,10 @@
 #include "main.h"
-/**
- *dad
- *daasd
- *das
- **/
 
+/**
+ * main - Entry point
+ *
+ * Return: always 0 (Success)
+*/
 int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
