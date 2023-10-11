@@ -1,11 +1,9 @@
 #include "main.h"
 /**
- * main - Entry point
+ * main - check the code.
  *
- * Description: using sizeof to print the size of the various types.
- *
- * Return: Always 0 (Success)
-*/
+ * Return: Always 0.
+ */
 
 void print_alphabet_x10(void)
 {
