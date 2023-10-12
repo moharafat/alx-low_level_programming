@@ -15,6 +15,7 @@ int x;
 		for (x = 48; x <= 57; x++)
 		{
 		_putchar(x);
+		
+		_putchar('\n'); 
 		}
-	_putchar('\n'); 
 }
