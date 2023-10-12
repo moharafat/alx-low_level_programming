@@ -12,5 +12,5 @@ int mul(int a, int b)
 
 	multiplication = (a * b)
 
-	return (sum);
+	return (multiplication);
 }
