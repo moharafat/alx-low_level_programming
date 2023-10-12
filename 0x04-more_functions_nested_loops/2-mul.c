@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - check the code
  *
@@ -10,7 +9,7 @@ int mul(int a, int b)
 
 {
 
-	int multiplication = a * b
+	int multiplication = (a * b);
 
 	return (multiplication);
 }
