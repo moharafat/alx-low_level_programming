@@ -12,7 +12,7 @@ void print_numbers(void)
 
 int c;
 
-	for (c = 0; c >= 48 && c <= 57; c++)
+	for (c = 48; c >= 48 && c <= 57; c++)
 	{
 		_putcahr(c);
 	}
