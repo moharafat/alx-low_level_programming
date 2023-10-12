@@ -10,7 +10,7 @@ void more_numbers(void)
 {
 	int num, line, count;
 
-	for (line = 0; l < 10; l++)
+	for (line = 1; l <= 10; l++)
 	{	
 			for (count = 0; count <= 14; count++)
 			{		
