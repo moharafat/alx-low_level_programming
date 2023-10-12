@@ -14,9 +14,9 @@ void more_numbers(void)
 			for (l = 0; l < 10; l++)
 
 			{
-				for (x = "0"; x <= "14"; x++)
+				for (x = '0'; x <= '14'; x++)
 
-				_putchar(x);
+				_putchar("%d", x);
 				_putchar('\x');
 			}
 }
