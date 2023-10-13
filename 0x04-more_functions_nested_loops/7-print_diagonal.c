@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_diagonal - draws a diagonal line
+ *@n: the only integer added
  * Return: Always 0.
  */
 
@@ -20,7 +20,7 @@ void print_diagonal(int n)
 				_putchar(' ');
 			_putchar(92);
 			_putchar('\n');
-		}	
+		}
 
 	}
 }
