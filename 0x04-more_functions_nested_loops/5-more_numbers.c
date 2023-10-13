@@ -11,7 +11,7 @@ void more_numbers(void)
 	int num, line, count;
 
 	for (line = 1; line <= 10; line++)
-	{	
+	{
 			for (count = 0; count <= 14; count++)
 			{
 				num = count;
@@ -23,5 +23,5 @@ void more_numbers(void)
 					_putchar(num + 48);
 			}
 				_putchar('\n');
-	}	
+	}
 }
