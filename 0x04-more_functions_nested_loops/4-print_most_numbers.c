@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
+ * print_most_numbers - prints the numbers 0 to 9
  *
  * Return: Always 0.
  */
