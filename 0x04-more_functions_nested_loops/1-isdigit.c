@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - check for a digit
- *@c integer to be added
+ *@c: integer to be added
  * Return: Always 0.
  */
 
