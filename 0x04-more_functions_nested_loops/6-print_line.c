@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_line - draws a diagonal line on the terminal
+ *@n: the only integer to be added
  * Return: Always 0.
  */
 
