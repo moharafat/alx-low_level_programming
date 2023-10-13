@@ -8,7 +8,7 @@
 
 void print_diagonal(int n)
 {
-	int L, space;
+	int l, space;
 
 	if (n <= 0)
 		_putchar('\n');
