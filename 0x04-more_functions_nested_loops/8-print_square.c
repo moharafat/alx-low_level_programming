@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_square - function that prints a square
+ *@size: is an integer to be added
  * Return: Always 0.
  */
 
 void print_square(int size)
 
-{	
+{
 	int r, c;
 
 	for (r = 1; r <= size; r++)
@@ -16,5 +16,5 @@ void print_square(int size)
 		for (c = 1; c <= size; c++)
 			_putchar(35);
 		_putchar('\n');
-	}	
+	}
 }
