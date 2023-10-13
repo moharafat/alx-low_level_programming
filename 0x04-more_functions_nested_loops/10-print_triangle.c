@@ -1,0 +1,31 @@
+#include "main.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+
+void print_triangle(int size)
+{
+		int h, b;
+
+		if (size <= 0)
+				_putchar("\n");
+		else
+		{
+				for (h = 1; h <= size; h++)
+				{
+						for (b = 1; b <= size; b++)
+						{
+								if ((h + b) <= size)
+										_putchar(" ");
+								else
+										_putchar(35);
+								
+						}
+
+				}
+						_putchar("\n")
+		}
+}
