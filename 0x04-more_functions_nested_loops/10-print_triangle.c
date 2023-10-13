@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_triangle - function that prints a trinagle
+ *@size: an integer to be added
  * Return: Always 0.
  */
 
@@ -22,7 +22,6 @@ void print_triangle(int size)
 										_putchar(' ');
 								else
 										_putchar('#');
-								
 						}
 						_putchar('\n');
 				}
