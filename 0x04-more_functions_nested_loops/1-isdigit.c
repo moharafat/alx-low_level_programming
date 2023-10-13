@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * _isdigit - check for a digit
+ *@c integer to be added
  * Return: Always 0.
  */
 
