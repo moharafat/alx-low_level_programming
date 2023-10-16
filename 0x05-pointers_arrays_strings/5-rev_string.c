@@ -16,5 +16,5 @@ int length = 0;
 	{
 		_putchar(s[length]);
 	}
-
+	_putchar('\n');
 }
