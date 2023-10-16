@@ -4,15 +4,17 @@
  * @str: string parameter input
  * Return: Always 0.
  */
-void puts_half(char *str)
-{
-	int i;
+void print_every_other_char(const char *str) {
+    if (str == NULL) {
+        return;
+    }
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
-	i++;
-	for (i /= 2; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
+    int i = 0;
+    while (str[i] != '\0') {
+        _putchar(str[i]);
+        i += 2;
+    }
+
+    _putchar('\n');
 }
+
