@@ -21,4 +21,3 @@ void print_rev(char *s) {
 	// Print a new line
 	_putchar('\n');
 }
-
