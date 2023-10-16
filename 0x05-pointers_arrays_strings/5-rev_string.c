@@ -5,18 +5,20 @@
  * Return: Always 0.
  */
 
-void rev_string(char *s)
-{
-	int l, i;
-	char temp;
+void print_rev(char *s) {
+	int length = 0;
 
-	for (l = 0; s[l] != '\0'; ++l)
-	;
-
-	for (i = 0; i < 1 / 2; i++)
-	{
-		temp = s[i];
-		s[i] = s[l - 1 - i];
-		s[l - 1 - i] = temp;
+	// Find the length of the string
+	while (s[length] != '\0') {
+		length++;
 	}
+
+	// Print characters in reverse order
+	for (int i = length - 1; i >= 0; i--) {
+		_putchar(s[i]);
+	}
+
+	// Print a new line
+	_putchar('\n');
 }
+
