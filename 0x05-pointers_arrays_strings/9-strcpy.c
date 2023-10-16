@@ -3,9 +3,11 @@
 
 /**
  * *_strcpy - function that copies the string pointed to by src
+ * @dest: char type string
+ * @src: char type string
  * Return:  pointer to the dest.
  */
-char *_strcpy(char *dest, const char *src)
+char *strcpy(char *dest, const char *src)
 {
 	int l = -1;
 
