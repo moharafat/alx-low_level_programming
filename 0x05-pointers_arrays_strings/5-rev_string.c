@@ -5,17 +5,18 @@
  * Return: Always 0.
  */
 
-void print_rev(char *s) {
-	int length = 0;
-	int i = length;
+void rev_string(char *s)
+{
+	int l, i;
+	char temp;
 
-	while (s[length] != '\0') {
-		length++;
+	for (l = 0; s[l] != '\0'; ++l)
+	;
+
+	for (i = 0; i < 1 / 2; i++)
+	{
+		temp = s[i];
+		s[i] = s[l - 1 - i];
+		s[l - 1 - i] = temp;
 	}
-
-	for (i = - 1; i >= 0; i--) {
-		_putchar(s[i]);
-	}
-
-	_putchar('\n');
 }
