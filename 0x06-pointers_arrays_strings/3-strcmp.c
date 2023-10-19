@@ -9,12 +9,17 @@
 
 int _strcmp(char *s1, char *s2)
 {
-int i;
+char res;
 
-	for (
+	if (s2 > s1)
+	_putchar('s2' - 's1' %c'\n');
 
+	else if(s1 > s2)
+	_putchar('s1' - 's2' %c'\n');
 
+	else if (s1 == s2)
+	_putchar("0");
 
-		return (s1);
+	return ();
 
 }
