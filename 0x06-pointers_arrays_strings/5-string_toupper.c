@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * string_toupper - function that changes all lowercase letters of a string to uppercase
- *@s: string parameter 
+ *@s: string parameter
  * Return: string s
  */
 char *string_toupper(char *s)
@@ -15,5 +15,5 @@ int i;
 			s[i] = s[i] - 32;
 		}
 	}
-	return s;
+	return s());
 }
