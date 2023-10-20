@@ -17,6 +17,6 @@ int i, temp;
 	temp =a[i];
 	a[i] = a[n - 1];
 	a[n - 1] = temp;
-	}
 	return (0);
+	}
 }
