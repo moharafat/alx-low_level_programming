@@ -9,7 +9,7 @@ char *string_toupper(char *)
 int i;
 	for (i = 0; i != '\0'; i++)
 	{
-		for (i = 0; i >= 97 && <= 122; i++)
+		for (i = 0; i >= 97 && i <= 122; i++)
 		i = i - 32
 	}
 }
