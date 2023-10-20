@@ -7,9 +7,9 @@
 char *string_toupper(char *)
 {
 int i;
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (i = 0; i >= 97 && i <= 122; i++)
-		i = i - 32
+		for (i = 0; s[i] >= 97 && s[i] <= 122; i++)
+		s[i] = s[i - 32];
 	}
 }
