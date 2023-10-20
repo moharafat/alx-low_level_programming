@@ -11,6 +11,7 @@ int i, temp;
 
    for (i = 0; a[i] != '\0'; i++)
    {
+	n = n + 1
    }
    for(i = 0; i < n / 2; i++)
    {
