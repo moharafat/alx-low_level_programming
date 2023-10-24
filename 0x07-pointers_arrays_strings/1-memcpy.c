@@ -14,6 +14,8 @@ unsigned int i;
 	for (i = 0; i < n; i++)
 	{
 		*dest = *src;
+		dest++; // Increment the destination pointer
+        src++;  // Increment the source pointer
 	}
 	return (dest);
 }
