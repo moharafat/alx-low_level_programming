@@ -1,14 +1,15 @@
 #include "main.h"
 /**
  * _strspn - function that gets the length of a prefix substring
- * @s: 
- * @accept: 
+ * @s: string of what we will compare to
+ * @accept:what we compare
  *
  * Return: Always number of bytes in the initial segmen
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, temp, count;
+
 	temp = 0;
 	count = 0;
 
@@ -16,11 +17,10 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i] == accept[j])
-			{count ++;
+			if (s[i]== accept[j])
+			{count++;
 			temp = 0;
 			}
-			
 			else
 			{
 			temp = 1;
@@ -28,7 +28,6 @@ unsigned int _strspn(char *s, char *accept)
 			if (temp == 1)
 			break
 			}
-			
 		}
 	}
 }
