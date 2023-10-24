@@ -13,7 +13,7 @@ unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
-		*dest = *src;
+		*(dest + 1) = *(src + 1);
 	}
 	return (dest);
 }
