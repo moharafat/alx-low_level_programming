@@ -6,12 +6,10 @@
  */
 int _strlen_recursion(char *s);
 {
-    // Base case: if the current character is the null terminator, return 0
-    if (*s == '\0')
-    {
-        return 0;
-    }
-    
-    // Recursively call _strlen_recursion with the next character in the string
-    return 1 + _strlen_recursion(s + 1);
+	// Base case: if the current character is the null terminator, return 0
+	if (*s == '\0')
+		return (0);
+	// Recursively call _strlen_recursion with the next character in the string
+	_strlen_recursion(s + 1);
+	return (1);
 }
