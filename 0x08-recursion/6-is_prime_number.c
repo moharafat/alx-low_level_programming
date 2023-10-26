@@ -4,7 +4,7 @@
  *@n: input parameter
  * Return: Always 0.
  */
-int is_prime_number(int n)
+int is_prime_number(int n, int divisor)
 {
     if (divisor == 1)
     {
