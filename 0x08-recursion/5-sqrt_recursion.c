@@ -1,20 +1,14 @@
 #include "main.h"
-
 /**
- * find_sqrt - Helper function to find the square root recursively
- * @n: The number for which to find the square root
- * @guess: The current guess for the square root
- * Return: The square root if found, -1 otherwise
+ * _sqrt_recursion - returns the natural square root of a number.
+ *@n: input number parameter which we will get the square root
+ * Return: Always 0
  */
-int find_sqrt(int n, int guess)
+int _sqrt_recursion(int n)
 {
-    if (guess * guess == n)
-    {
-        return guess; // If guess squared is equal to n, we found the square root
-    }
-    if (guess * guess > n)
-    {
-        return -1; // If guess squared is greater than n, n doesn't have a natural square root
-    }
-    return find_sqrt(n, guess + 1); // Try the next guess
+	if (n < 0)
+	return (-1);
+
+
+// n*n = n{\sqrt {n}}.
 }
