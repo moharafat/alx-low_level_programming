@@ -23,7 +23,7 @@ int helper (n , divisor) //function def. must begin with bec.the compiler goes f
 	return helper (n, divisor + 1); //Return function 
 }
 
-int is_prime_number(int n, int divisor)
+int is_prime_number(int n)
 
 {
 return helper (n , divisor); // function calling 
