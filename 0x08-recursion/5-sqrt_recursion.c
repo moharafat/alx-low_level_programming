@@ -18,8 +18,7 @@ int helper(n , x)//function defintion which  could be  int helper(n , 1)
 	return helper (n, x + 1);//Return function 
 }
 
-
 int _sqrt_recursion(int n)
 {
-return helper(n , x) //calling function
+return helper(n , x); //calling function
 }
