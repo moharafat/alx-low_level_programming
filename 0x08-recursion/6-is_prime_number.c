@@ -5,26 +5,26 @@
  * Return: Always 0.
  */
 int n;
-int x;
+int divisor;
 
-int helper (n , x) //function def. must begin with bec.the compiler goes from up to down
+int helper (n , divisor) //function def. must begin with bec.the compiler goes from up to down
 {
-	if (n == x)
+	if (n == divisor)
 	{
 	return (1);
 	}
-	if (n % x == 0)
+	if (n % divisor == 0)
 	{
 	return (0);
 	}
 	if (n == 1)
 	return (0);
 
-	return helper (n, x + 1); //Return function 
+	return helper (n, divisor + 1); //Return function 
 }
 
 int is_prime_number(int n, int divisor)
 
 {
-return helper (n , x); // function calling 
+return helper (n , divisor); // function calling 
 }
