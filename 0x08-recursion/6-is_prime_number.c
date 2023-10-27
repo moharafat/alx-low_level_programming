@@ -6,13 +6,13 @@
  */
 int n;
 int x;
+
 int helper (n , x) //function def. must begin with bec.the compiler goes from up to down
 {
 	if (n == x)
 	{
 	return (1);
 	}
-
 	if (n % x == 0)
 	{
 	return (0);
@@ -24,6 +24,7 @@ int helper (n , x) //function def. must begin with bec.the compiler goes from up
 }
 
 int is_prime_number(int n, int divisor)
+
 {
-return helper (n , x);
+return helper (n , x); // function calling 
 }
