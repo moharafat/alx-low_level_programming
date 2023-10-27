@@ -7,7 +7,7 @@
 int x;
 x = 1;
  
-int helper(n , x)//function defintion which  could be  int helper(n , 1)
+int helper(n , x) //function defintion which  could be  int helper(n , 1)
 {
 	if (x < n)
 	return (-1);
