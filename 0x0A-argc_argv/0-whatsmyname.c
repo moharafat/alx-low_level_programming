@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * print the program name + new line
+ * main - print the program name + new line
  *@argc: int
- *@argv: list
+ *@argv: string
  * Return: always 0
  */
 int main(int argc, char *argv[])
