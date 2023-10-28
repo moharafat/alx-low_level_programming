@@ -15,11 +15,11 @@ int main(int argc, char *argv[])
 
 		for (n = 0; n < 5; n++)
 		{
-			if (money >= cents[i])
+			if (money >= cents[n])
 			{
 				change = change + money / cents[i];
 				money = money % cents[i];
-				if (money % cents[i] == 0)
+				if (money % cents[n] == 0)
 				{
 					break;
 				}
