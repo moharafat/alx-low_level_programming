@@ -9,6 +9,6 @@
 int main(int argc, char *argv[])
 {
 	(void)*argv;
-	printf("%i\n", argc);
+	printf("%d\n", argc);
 	return (0);
 }
