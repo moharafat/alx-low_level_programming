@@ -9,9 +9,9 @@ x = 1;
  
 int helper(n , x) //function defintion which  could be  int helper(n , 1)
 {
-	if (x < n)
+	if (x < 0)
 	return (-1);
-	if (x == n) // WE REACHED THE END. IT IS A PRIME #
+	if (x * x > n) // WE REACHED THE END. IT IS A PRIME #
 	return (-1);
 	if (x * x == n) // WE HAVE FOUND X 
 	return (x);
@@ -20,5 +20,5 @@ int helper(n , x) //function defintion which  could be  int helper(n , 1)
 
 int _sqrt_recursion(int n)
 {
-return helper(n , x); //calling function
+return helper(n , 0); //calling function
 }
