@@ -7,8 +7,8 @@
  * Return: always 0
  */
 int main(int argc, char *argv[])
-int multiplication;
 {
+	int multiplication;
 	if ( argc != 3)
 	{
 		printf("Error");
