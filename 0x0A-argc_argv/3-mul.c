@@ -1,8 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - print the program name + new line
+ * main - Write a program that multiplies two numbers.
  *@argc: int
  *@argv: string
  * Return: always 0
  */
+int main(int argc, char *argv[])
+int multiplication;
+{
+    if ( argc != 3)
+    {
+        printf("Error");
+        return (1);
+    }
+    else
+    {
+    multiplication = atoi(argv[1]) * atoi(argv[2]);
+    printf("%d\n", multiplication);
+    return (0);
+    }
+}
