@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
 		{
 			if (money >= cents[n])
 			{
-				change = change + money / cents[i];
-				money = money % cents[i];
+				change = change + money / cents[n];
+				money = money % cents[n];
 				if (money % cents[n] == 0)
 				{
 					break;
