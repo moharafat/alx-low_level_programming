@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print the program name + new line
+ * main - Write a program that prints all arguments it receives.
  *@argc: int
  *@argv: string
  * Return: always 0
