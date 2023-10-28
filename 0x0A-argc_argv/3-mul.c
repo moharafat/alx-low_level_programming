@@ -8,17 +8,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int mult = 0;
+	int multiplication;
 
-	if (argc == 3)
+	if (argc == 3) 
 	{
-		mult = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", mult);
+		multiplication = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", multiplication);
 	}
 	else
 	{
-		printf("Error\n");
-		return (1);
+	printf("Error\n");
+	return (1);
 	}
+
 	return (0);
 }
