@@ -9,17 +9,16 @@
 int main(int argc, char *argv[])
 {
 	int multiplication;
-
-	if (argc == 3) 
+	if ( argc > 3 || argc < 3)
 	{
-		multiplication = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", multiplication);
+		printf("Error\n");
+		return (1);
 	}
 	else
-	{
-	printf("Error\n");
-	return (1);
-	}
 
+	{
+	multiplication = atoi(argv[1]) * atoi(argv[2]);
+	printf("%d\n", multiplication);
+	}
 	return (0);
 }
