@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 		int n, change = 0, money = atoi (argv[1]);
 		int cents[] = {25, 10, 5, 2, 1};
 
-		for (n = 0; n < 5; i++)
+		for (n = 0; n < 5; n++)
 		{
 			if (money >= cents[i])
 			{
@@ -25,12 +25,12 @@ int main(int argc, char *argv[])
 				}
 			}
 		}
-	printf("%d\n");
+	printf("%d\n", change);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	return (0):
+	return (0);
 }
