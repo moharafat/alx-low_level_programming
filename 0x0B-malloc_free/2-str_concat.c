@@ -21,14 +21,9 @@ char *str_concat(char *s1, char *s2)
 		return ('\0');
 	}
 
-	for (index = 0; s1[index] != '\0'; index++)
-	{
+for (index = 0; s1[index] || s2[index]; index++)
 		length++;
-	}
-	for (index = 0; s2[index] != '\0'; index++)
-	{
-		length++;
-	}
+		
 	array = malloc(sizeof(char) * (length));
 	if (array == NULL)
 		return (NULL);
