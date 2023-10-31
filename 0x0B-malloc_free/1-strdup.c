@@ -26,7 +26,9 @@ char *_strdup(char *str)
 	{
 		return (0);
 	}
-	
-
+	if (p > size)
+	{
+		return (0);
+	}
 	return (duplicate); //succsses
 }
