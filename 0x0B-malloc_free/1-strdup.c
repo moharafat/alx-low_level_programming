@@ -11,11 +11,8 @@ char *_strdup(char *str)
 	char *duplicate;
 	int index;
 	int length = 0;
-
 	
-
-	
-	if (str == NULL) //Returns NULL if str = NULL
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -24,11 +21,10 @@ char *_strdup(char *str)
 		length++
 	}
 	duplicate = malloc(sizeof(char) * (length +1));
-
 	if (duplicate == null)//If insufficient memory was available It returns NULL the missing if 
 	{						
 		return (NULL);
 	}
 
-	return (duplicate); //succsses
+	return (duplicate);
 }
