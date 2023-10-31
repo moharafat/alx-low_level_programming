@@ -1,21 +1,26 @@
 #include <stdlib.h>
-#include "main.h" // Include your header file to provide the function prototype
-
+#include "main.h"
+/**
+ * *create_array - function that creates an array of chars, and initializes it with a specific char
+ * @c: t
+ * Returns NULL if size = 0
+ * Returns a pointer to the array, or NULL if it fails
+ */
 char *create_array(unsigned int size, char c)
 {
-    if (size == 0) {
-        return NULL;
-    }
+	char *array;
+	unsigned int index;
 
-    char *array = (char *)malloc(size * sizeof(char));
+	if (size == 0)
+		return (NULL);
 
-    if (array == NULL) {
-        return NULL; // Memory allocation failed
-    }
+	array = malloc(sizeof(char) * size);
 
-    for (unsigned int i = 0; i < size; i++) {
-        array[i] = c;
-    }
+	if (array == NULL)
+		return (NULL);
 
-    return array;
+	for (index = 0; index < size; index++)
+		array[index] = c;
+
+	return (array);
 }
