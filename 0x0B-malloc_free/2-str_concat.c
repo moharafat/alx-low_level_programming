@@ -8,8 +8,9 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int length;
-	int array_index;
+	int length = 0;
+	int array_index =0;
+	int index;
 	char *array;
 
 	if (s1 == NULL)
@@ -23,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 
 for (index = 0; s1[index] || s2[index]; index++)
 		length++;
-		
+
 	array = malloc(sizeof(char) * (length));
 	if (array == NULL)
 		return (NULL);
