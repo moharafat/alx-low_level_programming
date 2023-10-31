@@ -21,10 +21,13 @@ char *_strdup(char *str)
 		length++
 	}
 	duplicate = malloc(sizeof(char) * (length +1));
-	if (duplicate == null)//If insufficient memory was available It returns NULL the missing if 
+	if (duplicate == NULL)//If insufficient memory was available It returns NULL the missing if 
 	{						
 		return (NULL);
 	}
-
+	for(index = 0; str[index] ; index++)
+	{
+		duplicate[index] = str[index];
+	}
 	return (duplicate);
 }
