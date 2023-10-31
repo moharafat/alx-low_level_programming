@@ -30,10 +30,10 @@ for (index = 0; s1[index] || s2[index]; index++)
 		return (NULL);
 
 	for (index = 0; s1[index]; index++)
-		array[carray_index++] = s1[index];
+		array[array_index++] = s1[index];
 
 	for (index = 0; s2[index]; index++)
 		array[array_index++] = s2[index];
 
-	return (array)
+	return (array);
 }
