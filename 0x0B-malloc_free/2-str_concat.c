@@ -30,10 +30,10 @@ for (index = 0; s1[index] || s2[index]; index++)
 		return (NULL);
 
 	for (index = 0; s1[index]; index++)
-		concat_str[carray_index++] = s1[index];
+		array[carray_index++] = s1[index];
 
 	for (index = 0; s2[index]; index++)
-		concat_str[array_index++] = s2[index];
+		array[array_index++] = s2[index];
 
 	return (array)
 }
