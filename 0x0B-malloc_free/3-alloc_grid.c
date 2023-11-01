@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * free_grid - frees a 2 dimensional grid previously 
- * created by your alloc_grid function.
+ * free_grid -function that returns a
+ *  pointer to a 2 dimensional array of integers.
  * @ **grid: the int that is added by the user
  * @height: the 2nd that is added by the user
  * Return:width or height is 0 or negative, return NULL
