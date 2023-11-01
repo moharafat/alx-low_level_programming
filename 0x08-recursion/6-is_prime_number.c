@@ -4,10 +4,8 @@
  *@n: input parameter
  * Return: Always 0.
  */
-int n;
-int divisor;
 
-int helper (n , divisor) //function def. must begin with bec.the compiler goes from up to down
+int helper(int n, int divisor) //function def. must begin with bec.the compiler goes from up to down
 {
 	if (n == divisor)
 	{
@@ -20,11 +18,14 @@ int helper (n , divisor) //function def. must begin with bec.the compiler goes f
 	if (n == 1)
 	return (0);
 
-	return helper (n, divisor + 1); //Return function 
+	return (helper(n, divisor + 1)); //Return function 
 }
 
 int is_prime_number(int n)
 
 {
-return helper (n , divisor); // function calling 
+	int divisor
+	divisor = 0
+
+	return helper(n, divisor); // function calling 
 }

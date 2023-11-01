@@ -7,13 +7,14 @@
  * Return:width or height is 0 or negative, return NULL
  */
 int **alloc_grid(int width, int height)
+
 {
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-	grid = malloc(sizeof(char) * size);
-
+	grid = malloc(sizeof(int) * size);
+	
 	int myarray [x][y];
 	for (x = 0; width[x] ;x++)
 	{
@@ -21,6 +22,4 @@ int **alloc_grid(int width, int height)
 	for (y = 0; height[y] ;y++)
 	{
 	}
-
-
 }
