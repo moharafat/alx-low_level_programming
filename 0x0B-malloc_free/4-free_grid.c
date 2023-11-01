@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * free_grid - Write a function that concatenates two strings.
- * @**grid: the string that is added by the used
+ * @grid: the string that is added by the used
  * @height: the 2nd string to be added to the 1st
  * Return: always 0
  */
