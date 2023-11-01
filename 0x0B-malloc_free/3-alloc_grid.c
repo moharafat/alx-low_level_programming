@@ -13,13 +13,28 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	grid = malloc(sizeof(int) * size);
-	
-	int myarray [x][y];
-	for (x = 0; width[x] ;x++)
+	int **arr;
+	arr = malloc(sizeof(int *) * height); //int* was the tricky part
+	if (arr == NULL)
 	{
+		return (NULL);
 	}
-	for (y = 0; height[y] ;y++)
+	for (i = 0; i < height; i++)
 	{
+		arr[i] = malloc(sizeof(int) * width);
+		if (arr[i] ==  NULL)
+		{
+			for (k = 0; k < i; k++)
+			{
+				free (arr[k]);
+			}
+		}
+	}
+	for (i = 0; i < height; i++)
+	{
+		for (k = 0; k < width; k++)
+		{
+			arr[i][k];
+		}
 	}
 }
