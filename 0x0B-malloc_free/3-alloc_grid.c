@@ -30,8 +30,6 @@ int **alloc_grid(int width, int height)
 			{
 				free(arr[k]);
 			}
-			free(arr); // Free the array of int pointers
-            return (NULL);
 		}
 	}
 	for (i = 0; i < height; i++)
