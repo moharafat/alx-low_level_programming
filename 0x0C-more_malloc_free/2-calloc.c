@@ -9,21 +9,22 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
-	unsigned int i;
-	unsigned int total_size;
+    void *ptr;
+    unsigned int i;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
+    if (nmemb == 0 || size == 0)
+        return NULL;
 
-	total_size = nmemb * size;
-	ptr = malloc(total_size);
+    // Calculate the total size of the memory block
+    size_t total_size = nmemb * size;
 
-	if (ptr == NULL)
-		return (NULL);
+    // Use calloc to allocate and initialize memory
+    ptr = calloc(nmemb, size);
 
-	for (i = 0; i < total_size; i++)
-		((char *)ptr)[i] = 0;
+    if (ptr == NULL)
+        return NULL;
 
-	return (ptr);
+    // No need for a separate loop to initialize with zeros
+
+    return ptr;
 }
