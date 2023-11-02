@@ -11,17 +11,20 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
     void *ptr;
     unsigned int i;
+    unsigned int total_size;
 
     if (nmemb == 0 || size == 0)
         return (NULL);
 
-    ptr = malloc(sizeof(unsigned) * nmemb); // Use malloc directly with your desired size
+    total_size = sizeof(unsigned) * nmemb; // Adjusted line
+
+    ptr = malloc(total_size);
 
     if (ptr == NULL)
         return (NULL);
 
-    for (i = 0; i < nmemb; i++)
-	ptr[i] = 0;
+    for (i = 0; i < total_size; i++)
+        ((char *)ptr)[i] = 0;
 
     return (ptr);
 }
