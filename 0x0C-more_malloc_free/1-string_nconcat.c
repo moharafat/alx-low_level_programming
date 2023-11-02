@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * *string_nconcat - function that concatenates two strings.
- * @s1: t
- * @s2: t
+ * @s1: the 1st string the user will addd
+ * @s2: the string we will add to the 1st
  * Return: zero 
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
