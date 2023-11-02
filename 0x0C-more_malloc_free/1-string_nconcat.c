@@ -11,36 +11,36 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-    char *s;
-    unsigned int len1 = 0, len2 = 0;
-    unsigned int i;
+	char *s;
+	unsigned int len1 = 0, len2 = 0;
+	unsigned int i, j;
 
-    if (s1 == NULL)
-        s1 = "";
-    if (s2 == NULL)
-        s2 = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-    for (i = 0; s1[i] != '\0'; i++)
-        len1++;
+	for (i = 0; s1[i] != '\0'; i++)
+		len1++;
 
-    for (i = 0; s2[i] != '\0'; i++)
-        len2++;
+	for (i = 0; s2[i] != '\0'; i++)
+		len2++;
 
-    if (n >= len2)
-        n = len2;
+	if (n >= len2)
+		n = len2;
 
-    s = malloc(sizeof(char) * (len1 + n + 1));
+	s = malloc(sizeof(char) * (len1 + n + 1));
 
-    if (s == NULL)
-        return (NULL);
+	if (s == NULL)
+		return (NULL);
 
-    for (i = 0; i < len1; i++)
-        s[i] = s1[i];
+	for (i = 0; i < len1; i++)
+		s[i] = s1[i];
 
-    for (i = 0; i < n; i++) // Change 'j' to 'i'
-        s[i + len1] = s2[i]; // Change 'j' to 'i'
+	for (j = 0; j < n; j++)
+		s[i + j] = s2[j];
 
-    s[i + len1] = '\0';
+	s[i + j] = '\0';
 
-    return (s);
+	return (s);
 }
