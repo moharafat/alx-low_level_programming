@@ -2,11 +2,12 @@
 #include "main.h"
 
 /**
- * string_nconcat - concatenates two strings with the first n bytes of s2
- * @s1: the first string
- * @s2: the second string
- * @n: the number of bytes to concatenate from s2
- * Return: a pointer to the concatenated string, or NULL if it fails
+ * string_nconcat - Concatenates two strings with the first n bytes of s2.
+ * @s1: The first string.
+ * @s2: The second string.
+ * @n: The number of bytes to concatenate from s2.
+ *
+ * Return: A pointer to the concatenated string, or NULL if it fails.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
