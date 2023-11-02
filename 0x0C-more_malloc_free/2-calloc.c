@@ -22,9 +22,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (ptr == NULL)
 		return (NULL);
-	filler = ptr;
+
 	for (i = 0; i < total_size; i++)
-		filler[i] = '\0';
+		ptr[i] = '\0';
 
 	return (ptr);
 }
