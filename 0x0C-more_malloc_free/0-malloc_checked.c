@@ -3,7 +3,7 @@
 /**
  * *malloc_checked - function that allocates memory using malloc
  * @b: the unsigned int that is added by the user
- * Return: zero 
+ * Return: 98 when malloc fails
  */
 void *malloc_checked(unsigned int b)
 {
