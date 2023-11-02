@@ -1,23 +1,22 @@
-/*
- * File: 0-malloc_checked.c
- * Auth: Brennan D Baraban
- */
-
-#include "holberton.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * malloc_checked - Allocates memory using malloc.
- * @b: The number of bytes to be allocated.
- *
- * Return: A pointer to the allocated memory.
+ * *malloc_checked - function that allocates memory using malloc
+ * @b: the unsigned int that is added by the user
+ * Return: a pointer to the allocated memory
+ * If malloc fails, it terminates the program with status 98
  */
 void *malloc_checked(unsigned int b)
 {
-	void *mem = malloc(b);
+    void *p;
 
-	if (mem == NULL)
-		exit(98);
+    p = malloc(b);
 
-	return (mem);
+    if (p == NULL)
+    {
+        exit(98);
+    }
+
+    return p; // Return the allocated memory pointer
 }
