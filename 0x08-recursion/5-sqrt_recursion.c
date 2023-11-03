@@ -6,7 +6,7 @@
  */ 
 int x = 1;
  
-int helper(n , x)
+int helper(int n, int x)
 {
 	if (x < n)
 	return (-1);
