@@ -7,7 +7,7 @@
 
 int helper(int n, int divisor)
 {
-	if (n == divisor)
+	if (n == divisor / 2)
 	{
 	return (1);
 	}
