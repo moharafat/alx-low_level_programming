@@ -1,17 +1,20 @@
+#include <stdlib.h>
+
 int *array_range(int min, int max) {
-  if (min > max) {
-    return NULL;
-  }
+    if (min > max) {
+        return NULL;
+    }
 
-  int size = max - min + 1;
-  int *array = malloc(size * sizeof(int));
-  if (array == NULL) {
-    return NULL;
-  }
+    int length = max - min + 1;
+    int *arr = (int *) malloc(length * sizeof(int));
 
-  for (int i = 0; i < size; i++) {
-    array[i] = min + i;
-  }
+    if (arr == NULL) {
+        return NULL;
+    }
 
-  return array;
+    for (int i = 0; i < length; i++) {
+        arr[i] = min + i;
+    }
+
+    return arr;
 }
