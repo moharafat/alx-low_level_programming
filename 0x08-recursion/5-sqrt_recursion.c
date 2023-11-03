@@ -4,6 +4,7 @@
  *@n: input number parameter which we will get the square root
  * Return: Always 0
  */ 
+int x = 1;
  
 int helper(int n, int x)
 {
@@ -15,11 +16,11 @@ int helper(int n, int x)
 
 	if (x * x == n)
 	return (x);
-	
+
 	return helper (n, x + 1);
 }
 
 int _sqrt_recursion(int n)
 {
-return helper(n , 1);
+return helper(n , x);
 }
