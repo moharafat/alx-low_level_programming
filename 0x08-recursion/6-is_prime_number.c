@@ -25,7 +25,7 @@ int is_prime_number(int n)
 
 {
 	int divisor;
-	divisor = 0
+	divisor = 0;
 
 	return helper(n, divisor); // function calling 
 }
