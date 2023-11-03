@@ -5,8 +5,7 @@
  * Return: Always 0
  */
 
-int x;
-x = 1;
+int x = 1;
  
 int helper(int n, int x)
 {
