@@ -1,21 +1,30 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
+/**
+ * *array_range - Write a function that creates an array of integers.
+ * @min: the minimum value (inclusive) for the array.
+ * @max: the maximum value (inclusive) for the array.
+ *Return: the pointer to the newly created array or NULL on failure.
+*/
+int *array_range(int min, int max)
+{
+	void *ptr;
 
-int *array_range(int min, int max) {
-    if (min > max) {
-        return NULL;  // Invalid range
-    }
+	if (min > max)
+	return (NULL);
 
-    int num_elements = max - min + 1;
-    int *result = (int *)malloc(num_elements * sizeof(int));
+	ptr = malloc(sizeof(int) * (max - min + 1));
 
-    if (result == NULL) {
-        return NULL;  // Memory allocation failed
-    }
-
-    for (int i = 0; i < num_elements; i++) {
-        result[i] = min + i;
-    }
-
-    return result;
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		for (i = min; i <= max; i++)
+		{
+			ptr[i - min] = i
+		}
+		return (ptr);
+	}
 }
