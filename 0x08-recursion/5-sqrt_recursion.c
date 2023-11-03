@@ -6,14 +6,14 @@
  */
 
 int x = 1;
- 
+
 int helper(int n, int x)
 {
 	if (x * x == n)
 	return (x);
 
 	else if (x * x < n)
-	return (helper (n, x + 1));
+	return (helper(n, x + 1));
 
 	else
 		return (-1);
@@ -21,5 +21,5 @@ int helper(int n, int x)
 
 int _sqrt_recursion(int n)
 {
-return helper(n , x);
+return (helper(n , x));
 }
