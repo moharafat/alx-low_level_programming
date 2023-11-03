@@ -7,18 +7,18 @@
 int x;
 x = 1;
  
-int helper(n , x) //function defintion which  could be  int helper(n , 1)
+int helper(n , x)
 {
 	if (x < n)
 	return (-1);
-	if (x == n) // WE REACHED THE END. IT IS A PRIME #
+	if (x == n)
 	return (-1);
-	if (x * x == n) // WE HAVE FOUND X 
+	if (x * x == n)
 	return (x);
-	return helper (n, x + 1);//Return function 
+	return helper (n, x + 1);
 }
 
 int _sqrt_recursion(int n)
 {
-return helper(n , x); //calling function
+return helper(n , x);
 }
