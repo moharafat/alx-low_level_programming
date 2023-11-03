@@ -18,7 +18,7 @@ int helper(int n, int divisor)
 	if (n == 1)
 	return (0);
 
-	return (helper(n, divisor + 1)); //Return function 
+	return (helper(n, divisor + 1));
 }
 
 int is_prime_number(int n)
@@ -27,5 +27,5 @@ int is_prime_number(int n)
 	int divisor;
 	divisor = 0;
 
-	return helper(n, divisor); // function calling 
+	return helper(n, divisor);
 }
