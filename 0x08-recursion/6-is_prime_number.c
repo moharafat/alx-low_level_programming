@@ -5,7 +5,7 @@
  * Return: Always 0.
  */
 
-int helper(int n, int divisor) //function def. must begin with bec.the compiler goes from up to down
+int helper(int n, int divisor)
 {
 	if (n == divisor)
 	{
