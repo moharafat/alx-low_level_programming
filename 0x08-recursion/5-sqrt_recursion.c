@@ -11,8 +11,6 @@ int helper(int n, int x)
 	if (x < n)
 	return (-1);
 	
-	if (x == n)
-	return (-1);
 
 	if (x * x == n)
 	return (x);
