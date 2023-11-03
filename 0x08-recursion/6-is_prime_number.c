@@ -1,32 +1,34 @@
 #include "main.h"
-#include <math.h> // Include math library for sqrt function
-
 /**
- * helper - Helper function to check if a number is prime
- * @n: The number to check for primality
- * @divisor: The current divisor to check
- * Return: 1 if prime, 0 if not
+ * is_prime_number - check the code
+ *@n: input parameter
+ * Return: Always 0.
  */
+
 int helper(int n, int divisor)
 {
-    if (n <= 1)
-        return 0; // 0 and 1 are not prime
+	if (n == divisor)
+	{
+	return (1);
+	}
+	if (n % divisor == 0)
+	{
+	return (0);
+	}
+	if (n == 1)
+	return (0);
 
-    if (divisor > sqrt(n))
-        return 1; // All divisors checked, it's prime
+	if (divisor == n / 2)
+		return (1);
 
-    if (n % divisor == 0)
-        return 0; // Found a divisor, it's not prime
-
-    return helper(n, divisor + 1); // Check the next divisor
+	return (helper(n, divisor + 1));
 }
 
-/**
- * is_prime_number - Check if a number is prime
- * @n: The number to check for primality
- * Return: 1 if prime, 0 if not
- */
 int is_prime_number(int n)
+
 {
-    return helper(n, 2); // Start checking from divisor 2 (the smallest prime)
+	int divisor;
+	divisor = 0;
+
+	return helper(n, divisor);
 }
