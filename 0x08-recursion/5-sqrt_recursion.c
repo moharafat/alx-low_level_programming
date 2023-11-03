@@ -5,8 +5,6 @@
  * Return: Always 0
  */
 
-int x;
-
 int helper(int n, int x)
 {
 	if (x * x == n)
