@@ -19,8 +19,9 @@ int helper(int n, int divisor)
 	return (0);
 
 	if (divisor == n / 2)
+	{
 		return (1);
-
+	}
 	return (helper(n, divisor + 1));
 }
 
