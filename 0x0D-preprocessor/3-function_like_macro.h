@@ -1,4 +1,1 @@
-int ABS(int N)
-{
-    return ((N<0)?(-N):(N));
-}
+#define ABS(X) ((X) < 0 ? (-(X)):(X))
