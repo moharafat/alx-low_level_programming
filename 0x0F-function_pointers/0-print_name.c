@@ -3,11 +3,12 @@
  * print_name - Prints a name.
  * @name: The name taht will be printed.
  * @f: A pointer to a function that will print a name.
- * Return: Nothing.
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (name && f)
-	f(name);
+	if ((name != NULL) && (f != NULL))
+	{
+		f(name);
+	}
 }
