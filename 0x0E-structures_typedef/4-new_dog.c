@@ -5,7 +5,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *tmp;
-	char* cpname, cpowner;
+	char *cpname, *cpowner;
 	int i, lenname, lenowner;
 
 	for (i = 0, lenname = 0; name[i] != '\0'; i++)
