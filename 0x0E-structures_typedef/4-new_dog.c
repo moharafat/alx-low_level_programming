@@ -1,16 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
 #include <stdlib.h>
-char *_strcpy(char *dest, char *src)
-{
-	int a = -1;
-
-	do {
-	a++;
-	dest[a] = src[a];
-	} while (src[a] != '\0');
-	return (dest);
-}
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
