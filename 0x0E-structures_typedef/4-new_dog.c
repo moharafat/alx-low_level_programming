@@ -8,7 +8,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *cpname, *cpowner;
 	int i, lenname, lenowner;
 
-	if name == NULL || owner == null
+	if name == NULL || age < 0 || owner == null
 	return (NULL);
 	for (i = 0, lenname = 0; name[i] != '\0'; i++)
 		lenname++;
