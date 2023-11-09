@@ -1,7 +1,3 @@
-/*
- * File: 3-main.c
- * Auth: Brennan D Baraban
- */
 
 #include "3-calc.h"
 #include <stdlib.h>
