@@ -4,7 +4,7 @@
 
  /**
   *
-  * print_numbers - Prints numbers, followed by a new line.
+  * print_numbers - prints numbers given as parameters.
   * @separator:  is the string to be printed between numbers
   * @n: The number of paramters passed to the function.
   * @...: A variable number of paramters to calculate the sum of.
