@@ -3,7 +3,6 @@
 #include <stdio.h>
 
  /**
-  *
   * print_numbers - prints numbers given as parameters.
   * @separator:  is the string to be printed between numbers
   * @n: The number of paramters passed to the function.
