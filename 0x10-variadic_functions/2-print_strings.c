@@ -26,7 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 		printf("%s", separator);	
 		}
-		printf("%d", va_arg(ptr, int));
+		printf("%s", va_arg(ptr, char));
 	}
 	va_end(ptr);
 	printf("\n");
