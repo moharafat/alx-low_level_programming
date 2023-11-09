@@ -10,6 +10,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf(va_arg(ptr, int));
 	}
-			va_end(ptr);
+	va_end(ptr);
 
 }
