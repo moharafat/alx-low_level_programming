@@ -2,7 +2,7 @@
 #include <stdarg.h>
 int sum_them_all(const unsigned int n, ...)
 {
-	int i;
+	unsigned int i;
 	int sum = 0;
 	va_list ptr;
 	for (i = 0; i < n; i++)
