@@ -9,8 +9,7 @@
   * @n: The number of paramters passed to the function.
   * @...: A variable number of paramters to calculate the sum of.
   * Return: always zero.
-  *
-  */
+  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ptr;
