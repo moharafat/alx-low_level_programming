@@ -9,7 +9,7 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list ptr;
+	va_list ptr;// ptr is where ower arguments will be stored
 	unsigned int i;
 	unsigned int sum = 0;
 
