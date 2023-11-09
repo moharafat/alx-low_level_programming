@@ -21,13 +21,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		const char *str = va_arg(ptr, char *);
 
 		if ( str == NULL)
-		{
+		{{
 			printf("nil");
 		}
 		else
 		{
 		printf("%s", str);
-		}		
+		}}
 		if (separator != NULL && i != 0)
 		{
 			printf("%s", separator);	
