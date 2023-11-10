@@ -11,24 +11,28 @@ void print_all(const char * const format, ...)
 	va_list ptr;
 	unsigned int i;
 
-	va_start(ptr, n);
+	va_start(ptr, format);
 
-	for (i = 0; i < n; i++)
+	while (*format != '\0')
 	{
-		const char *str = va_arg(ptr, format *);
-		if (str = char)
+		char type = *format;
+		
+		switch (type) 
 		{
-			printf("%s", str);
+			case 'c':
+			printf("%c", va_arg(ptr, char));
+			case 'i':
+			printf("%d", va_arg(ptr, int));
+			case 'f':
+			printf("%f", va_arg(ptr, double));
+			case 's':
+			printf("%s", va_arg(ptr, char));
+			break;
+      		default:
+			break;
 		}
-		if (str = int)
-		{
-			printf("%s", str);
-		}
-		if (str = float)
-		{
-			printf("%f", str);
-		}
+		    format++;
 	}
-	va_start(ptr, n);;
+	va_end(ptr);
 	printf("\n");
 }
