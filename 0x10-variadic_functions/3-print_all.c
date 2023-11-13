@@ -1,38 +1,43 @@
-#include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdio.h>
-/**
- * print_all - Write a function that prints anything. 
- * @format: is a list of types of arguments passed to the function 
- * @...: A variable number of numbers to be printed.
- */
 void print_all(const char * const format, ...)
 {
-	va_list ptr;
-	unsigned int i;
+    va_list ptr;
+    unsigned int i;
 
-	va_start(ptr, format);
+    va_start(ptr, format);
 
-	while (*format != '\0')
-	{
-		char type = *format;
-		
-		switch (type) 
-		{
-			case 'c':
-			printf("%c", va_arg(ptr, char));
-			case 'i':
-			printf("%d", va_arg(ptr, int));
-			case 'f':
-			printf("%f", va_arg(ptr, double));
-			case 's':
-			printf("%s", va_arg(ptr, char));
-			break;
-      		default:
-			break;
-		}
-		    format++;
-	}
-	va_end(ptr);
-	printf("\n");
+    while (*format != '\0')
+    {
+        char type = *format;
+
+        switch (type)
+        {
+            case 'c':
+                printf("%c", va_arg(ptr, int)); // char is promoted to int in varargs
+                break;
+            case 'i':
+                printf("%d", va_arg(ptr, int));
+                break;
+            case 'f':
+                printf("%f", va_arg(ptr, double)); // float is promoted to double in varargs
+                break;
+            case 's':
+                {
+                    char *str = va_arg(ptr, char *);
+                    if (str == NULL)
+                        printf("(nil)");
+                    else
+                        printf("%s", str);
+                    break;
+                }
+            default:
+                break;
+        }
+
+        if (*(format + 1) != '\0') // Check if not the last character in the format string
+            printf(", "); // Print a comma and space to separate values
+
+        format++;
+    }
+    va_end(ptr);
+    printf("\n");
 }
