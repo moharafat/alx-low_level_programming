@@ -9,14 +9,14 @@ int pop_listint(listint_t **head)
         return -1; 
     } 
 	else {
-        listint_t *temp = *head; // Store the current head
-        int removed_data = temp->n; // Store the data of the removed node
+        listint_t *temp = *head;
+        int removed_data = temp->n;
 
-        *head = (*head)->next; // Move the head pointer to the next node
+        *head = (*head)->next;
 
-        free(temp); // Free the memory of the removed node
+        free(temp);
         temp = NULL;
 
-        return removed_data; // Return the removed integer data
+        return removed_data;
     }
 }
