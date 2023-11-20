@@ -8,7 +8,7 @@
  *            end of a listint_t list.
  * @head: A pointer to address of the
  *        head of listint_t list.
- * @n: The integer for the new node 
+ * @n: The integer for the new node
  *
  * Return: the address of the new element.
  */
