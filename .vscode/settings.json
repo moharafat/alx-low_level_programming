@@ -3,7 +3,9 @@
     "main.h": "c",
     "dog.h": "c",
     "variadic_functions.h": "c",
-    "lists.h": "c"
+    "lists.h": "c",
+    "draft": "c",
+    "test": "c"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",

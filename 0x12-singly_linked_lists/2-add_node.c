@@ -2,25 +2,11 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * _strlen - function that returns the length of a string
- *@s: string parameter input
- * Return: length of string
- */
-
-int _strlen(char *s)
-{
-	int length;
-
-	for (length = 0; *s != '\0'; s++)
-		++length;
-return (length);
-}
 
 /**
  * add_node - adds a new node at the beginning of a list_t list
- * @head: refers to the first node (head)
- * @str:
+ * @head: A pointer to the head of the list_t list.
+ * @str: string to be added to the list_t list.
  * Return:  address of the new element, or NULL if it failed
  */
 list_t *add_node(list_t **head, const char *str)
