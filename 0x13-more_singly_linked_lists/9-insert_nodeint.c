@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * pop_listint - Deletes the head node of a listint_t list.
+ * insert_nodeint_at_index - iserts a new node at a given position.
  * @head: A pointer to the address of the
  *        head of the listint_t list.
  * @idx: is the index of the list where the new node should be added
