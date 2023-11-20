@@ -24,7 +24,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
         *head = new_node; /* If the list is empty, new node becomes the head*/
         return (new_node);
     }
-	while (temp != NULL)
+	while (temp->next != NULL)
 	{
 		temp = temp->next;
 	}
