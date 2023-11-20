@@ -5,7 +5,6 @@
 int pop_listint(listint_t **head)
 {
     if (head == NULL || *head == NULL) {
-        // Handle cases where the list or head is NULL
         return -1; // Return an error code (-1 in this case)
     } else {
         listint_t *temp = *head; // Store the current head
