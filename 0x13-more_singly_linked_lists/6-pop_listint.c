@@ -4,9 +4,11 @@
 
 int pop_listint(listint_t **head)
 {
-    if (head == NULL || *head == NULL) {
-        return -1; // Return an error code (-1 in this case)
-    } else {
+    if (head == NULL || *head == NULL) 
+	{
+        return -1; 
+    } 
+	else {
         listint_t *temp = *head; // Store the current head
         int removed_data = temp->n; // Store the data of the removed node
 
