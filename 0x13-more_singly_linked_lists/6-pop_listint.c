@@ -4,6 +4,7 @@
 #include "lists.h"
 int pop_listint(listint_t **head)
 {
+	listint_t *temp
 	int ret;
 	if (head == NULL)
 	{
@@ -11,7 +12,7 @@ int pop_listint(listint_t **head)
 	}
 	else
 	{
-	listint_t *temp = *head;
+	temp = *head;
 	ret = (*head)->n;
 	(*head) = (*head)->next;
 	free(temp);
