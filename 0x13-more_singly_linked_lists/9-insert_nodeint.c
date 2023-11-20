@@ -5,13 +5,14 @@
  * @head: A pointer to the address of the
  *        head of the listint_t list.
  * @idx: is the index of the list where the new node should be added
- * @n: integer inside  new node 
+ * @n: integer inside  new node
  * Return:  the address of the new node, or NULL if it failed
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *ptr = *head;
 	listint_t *new_node = malloc(sizeof(listint_t));
+
 	new_node->n = n;
 	new_node->next = NULL;
 
