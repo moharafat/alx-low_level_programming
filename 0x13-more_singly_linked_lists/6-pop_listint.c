@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 /**
  * pop_listint - Deletes the head node of a listint_t list.
