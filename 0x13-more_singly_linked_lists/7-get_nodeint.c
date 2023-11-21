@@ -8,16 +8,18 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *ptr = *head;
-	int i = 0;
+    listint_t *ptr = head;
+    unsigned int i = 0;
 
-	while (ptr != NULL)
-	{
-		if (i = index)
-		{
-			return (ptr->n);
-		}
-			i++;
-			ptr->next;
-	}
+    while (ptr != NULL)
+    {
+        if (i == index)
+        {
+            return ptr; // Return the pointer to the node at the given index
+        }
+        i++;
+        ptr = ptr->next; // Move to the next node
+    }
+
+    return NULL; // Return NULL if the index is out of range
 }
