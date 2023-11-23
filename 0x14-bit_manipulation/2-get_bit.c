@@ -8,10 +8,13 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index >= n)
+	if (index > sizeof(unsigned long int) * 8)
 	{
 		return (-1);
 	}
-		get_bit(n >> index);
-		_putchar((n & 1) + '0');
+	if (n >> index == 1)
+	return (1);
+
+	if (n >> index == 0)
+	return (0);
 }
