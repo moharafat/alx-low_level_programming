@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *  set_bit -sets the value of a bit to 1 at a given index
- * @n: The number whose bit value is to be returned
+ * @n:  A pointer to the bit.
  * @index:The index of the bit to be returned
  * Return: 1 if it worked, or -1 if an error occurred
  */
