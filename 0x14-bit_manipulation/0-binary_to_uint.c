@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 unsigned int binary_to_uint(const char *b) {
-    unsigned int sum = 0;
-	
+	unsigned int sum = 0;
     if (b == NULL) {
         return 0;
     }
@@ -15,6 +14,7 @@ unsigned int binary_to_uint(const char *b) {
         }
         
         sum = sum * 2 + (*b - '0');
+        b++;
     }
 
     return sum;
