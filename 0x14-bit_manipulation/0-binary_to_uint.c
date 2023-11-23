@@ -14,5 +14,5 @@ unsigned int binary_to_uint(const char *b)
 		sum = sum * 2 + (*b - '0');
 		b++;
 	}
-	return sum;
+	return (sum);
 }
