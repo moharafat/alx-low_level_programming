@@ -24,7 +24,10 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	{
 		return (0);
 	}
+    if (*n >> index & 1)
+    {
 	*n |= (0 << index);
 	return (0);
+    }
 }
 
