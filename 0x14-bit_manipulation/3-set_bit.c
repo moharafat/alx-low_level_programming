@@ -16,6 +16,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	{
 		return (1);
 	}
+/* Set the bit to 1 if it is not already set*/
 	*n |= (1 << index);
 	return (1);
 }
