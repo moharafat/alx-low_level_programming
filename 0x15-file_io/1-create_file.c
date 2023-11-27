@@ -7,6 +7,21 @@
 #include <stddef.h>
 #include <sys/types.h>
 /**
+ * _strlen - function that returns the length of a string
+ *@s: string parameter input
+ * Return: length of string
+ */
+
+int _strlen(char *s)
+{
+	int length;
+
+	for (length = 0; *s != '\0'; s++)
+		++length;
+return (length);
+}
+
+/**
  * create_file - function that creates a file.
  * @filename: A pointer to the name of the file to create
  * @text_content:  A pointer to a string to write to the file.
@@ -28,7 +43,7 @@ int create_file(const char *filename, char *text_content)
 	}
 	while (len != 0)
 	{
-	write(1, text_content, len);
+	write(fd, text_content, len);
 	}
 	close(fd);
 	return (1);
