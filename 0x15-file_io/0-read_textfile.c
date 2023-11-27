@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <stddef.h>
 /**
  * read_textfile -reads a text file and prints it to the POSIX standard output.
  * @filename: The number whose bit value is to be fliped
