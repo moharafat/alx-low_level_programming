@@ -13,12 +13,12 @@ ssize_t read_textfile(const char *filename, size_t letters);
 {
 	int fp;
 	ssize_t bytes_read;
-	char buff;
+	char *buff;
 	int n;
 	int *ptr;
 
-	buff = malloc(sizeof (size_t)* size);
-	if (buff == 0)
+	buff = malloc(sizeof (size_t)* letters);
+	if (buff == 0 | letters == 0)
 	{
 		return (0);
 	}
