@@ -14,12 +14,18 @@ ssize_t read_textfile(const char *filename, size_t letters);
 	int fp;
 	ssize_t bytes_read;
 	char buff[] = letters;
+	int n;
+
 	fp = open(filename, O_RDONLY | O_RDWR , 0644)
 	if	(fp == -1)
 	{
 		return (0);
 	}
-	read (fp, buff, letters)
+	n = read (fp, buff, letters)
+	if (n == -1)
+	{
+		return (0);
+	}
 	if (write(buff, sizeof (buff)-1 ) == -1)
 	{
 		exit (0);
