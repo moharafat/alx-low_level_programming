@@ -10,7 +10,7 @@
  * read_textfile -reads a text file and prints it to the POSIX standard output.
  * @filename: The number whose bit value is to be fliped
  * @letters: number of letters it should read and print
- * Return: number of letters it could read and print
+ * Return: 1 on success, -1 on failure
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	buff = malloc(sizeof(size_t) * letters);
+	buff = malloc(sizeof(char) * letters);
 	if (buff == NULL)
 	{
 		return (0);
