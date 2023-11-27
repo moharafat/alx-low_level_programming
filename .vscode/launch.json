@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Mohamad/alx-low_level_programming-8/0x14-bit_manipulation",
-      "program": "c:/Users/Mohamad/alx-low_level_programming-8/0x14-bit_manipulation/build/Debug/outDebug",
+      "cwd": "c:/Users/Mohamad/alx-low_level_programming-9/0x15-file_io",
+      "program": "c:/Users/Mohamad/alx-low_level_programming-9/0x15-file_io/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
