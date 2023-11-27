@@ -13,9 +13,15 @@ ssize_t read_textfile(const char *filename, size_t letters);
 {
 	int fp;
 	ssize_t bytes_read;
-	char buff[] = letters;
+	char buff;
 	int n;
+	int *ptr;
 
+	buff = malloc(sizeof (size_t)* size);
+	if (buff == 0)
+	{
+		return (0);
+	}
 	fp = open(filename, O_RDONLY | O_RDWR , 0644)
 	if	(fp == -1)
 	{
@@ -26,7 +32,7 @@ ssize_t read_textfile(const char *filename, size_t letters);
 	{
 		return (0);
 	}
-	 write(buff, n)
+	 write(1, buff, n)
 
 	if (close (fp) == -1)
 	{
