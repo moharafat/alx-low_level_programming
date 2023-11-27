@@ -7,8 +7,6 @@
 #include <stddef.h>
 #include <sys/types.h>
 /**
-
-/**
  * create_file - function that creates a file.
  * @filename: A pointer to the name of the file to create
  * @text_content:  A pointer to a string to write to the file.
