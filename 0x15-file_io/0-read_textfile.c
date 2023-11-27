@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters);
 	{
 		return (0);
 	}
-	fp = open(filename, O_RDONLY | O_RDWR , 0644)
+	fp = open(filename, O_RDONLY | O_RDWR)
 	if	(fp == -1)
 	{
 		return (0);
