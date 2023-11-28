@@ -8,7 +8,6 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
-	int len = _strlen(text_content);
 	int n = 0;
 	if (filename == NULL)
 	{
@@ -21,7 +20,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	if (text_content != NULL)
 	{
-		n = write(fd, text_content, len);
+		n = write(fd, text_content, strlen(text_content));
 		if (n == -1)
 		{
 			close(fd);
