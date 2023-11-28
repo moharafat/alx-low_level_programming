@@ -2,6 +2,10 @@
 #define MAIN_H
 #include <stddef.h>
 #include <sys/types.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
 
 int _putchar(char c);
 int _strlen(char *s);
