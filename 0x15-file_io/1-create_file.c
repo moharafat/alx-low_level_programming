@@ -4,7 +4,6 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stddef.h>
-#include <stddef.h>
 #include <sys/types.h>
 /**
  * create_file - function that creates a file.
@@ -15,7 +14,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	int len = _strlen(text_content);/*int argc, char* argv[] */
+	int len = _strlen(text_content);
 	int n = 0;
 	if (filename == NULL)
 	{
