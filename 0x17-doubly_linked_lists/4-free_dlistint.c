@@ -10,7 +10,6 @@ void free_dlistint(dlistint_t *head)
 	dlistint_t *next_node;
 
 	currnet_node = head;
-	next_node = head;
 	while (currnet_node != NULL)
 	{
 		next_node = currnet_node->next;
