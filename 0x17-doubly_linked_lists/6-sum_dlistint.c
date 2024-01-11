@@ -7,7 +7,7 @@
 int sum_dlistint(dlistint_t *head)
 {
 	int sum;
-	dlistint_t *current_node = head;
+	dlistint_t *current_node;
 
 	while (current_node != NULL)
 	{
