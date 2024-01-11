@@ -9,7 +9,7 @@ int sum_dlistint(dlistint_t *head)
 	int sum;
 	dlistint_t *head_t;
 
-	while (head)
+	while (head != NULLS)
 	{
 		sum = sum + head_t->n;
 		head_t = head_t->next;
