@@ -1,0 +1,8 @@
+char* ht_search(HashTable* table, char* key)
+{
+    /*searches for the key in the Hash table*/
+    /*Returns Null if it doesn't exist*/
+    int index = hash_function(key);
+    Ht_item* item = table->items[index];
+    
+}
