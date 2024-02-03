@@ -11,10 +11,29 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	hash_node_t *current_item;
+	hash_node_t *new_item;
 
 	index = key_index((const unsigned char *)key, ht->size);
 	current_item = ht->array[index];
-	while (current_item != NULL)
+
+	new_item = malloc(sizeof(hash_node_t));
+	if (new_item == NULL)
+	{
+		return (0);
+	}
+	new_item->key = strdup(key);
+	new_item->value = strdup(value);
+	if (new_item->key == NULL || new_item->value == NULL)
+	{
+		free(new_item->value);
+		free(new_item->key);
+		return (0);
+	}
+	if (current_item == NULL)
+	{
+		current_item = new_item;
+	}
+	if (current_item != NULL)
 	{
 		if (strcmp(current_item->key, key) == 0)
 		{
@@ -26,22 +45,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			}
 			return (1);
 		}
-		current_item = current_item->next;
+		new_item->next = current_item;
+		ht->array[index] = new_item;
+		return (1);
 	}
-	current_item = malloc(sizeof(hash_node_t));
-	if (current_item == NULL)
-	{
-		return (0);
-	}
-	current_item->key = strdup(key);
-	current_item->value = strdup(value);
-	if (current_item->key == NULL || current_item->value == NULL)
-	{
-		free(current_item->value);
-		free(current_item->key);
-		return (0);
-	}
-	current_item->next = ht->array[index];
-	ht->array[index] = current_item;
 	return (1);
 }
