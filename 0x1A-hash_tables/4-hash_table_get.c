@@ -23,7 +23,9 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	}
 	while (current_item->next != NULL)
 	{
+
 		current_item = current_item->next;
 	}
+
 	return (current_item->value);
 }
