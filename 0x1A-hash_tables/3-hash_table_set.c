@@ -31,7 +31,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	if (current_item == NULL)
 	{
-		current_item = new_item;
+		ht->array[index] = new_item;
 	}
 	if (current_item != NULL)
 	{
